@@ -1,0 +1,97 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+  background-color: #44b883;
+}
+
+#cabecalho .nav .nav-link.active {
+  background-color: #fff;
+  color: #44b883;
+}
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav_alimentacao .nav-link.active:hover  {
+  color: #fff;
+}
+
+.navbar-toggler {
+  background-color: #aae3c9;
+}
+
+.section_title {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#sobre_clinica, #alimentacao {
+  background-color: #aae3c9;
+}
+
+.text_color {
+  color: #44b883;
+}
+
+.nav_alimentacao .nav-link.active,
+#contato button {
+  background-color: #44b883;
+  color: #fff;
+}
+.nav_alimentacao .nav-link:hover {
+  color: #44b883;
+}
+
+.social_links li {
+  list-style: none;
+  display: inline;
+  text-decoration: none;
+}
+.social_links a { /* PARA REMOVER _ */
+  text-decoration: none;
+}
+
+.text_justify {
+  text-align: justify;
+}
+
+textarea {
+  resize: none;
+}
+
+footer {
+  background-color: #44b883;
+  height: 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 200px;
+    width: 400px;
+  }
+
+  .section_title {
+    font-size: small;
+  }
+
+  footer {
+    font-size: small;
+  }
+}
+
+@media (min-width: 768px) and (max-width:991px){
+  .carousel-item img {
+    height: 300px;
+    width: 900px;
+  }
+  
+  .section_title {
+    font-size: small;
+  }
+
+  footer {
+    font-size: small;
+  }
+}

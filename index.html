@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Dr. Mário Coutinho</title>
+</head>
+<body>
+  <header class="navbar navbar-expand-lg sticky-top pt-4" id="cabecalho"><!--sticky-top PARA ACOMPANHAR A ROLAGEM  -->
+    <div class="container">
+      <h1 class="navbar-brand section_title">Dr. Mário Coutinho - Endocrinologia e Metabologia</h1>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><!-- on off menu -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="navbar-collapse collapse justify-content-end" id="menu"><!-- collapse USANDO PARA MOSTRA E REMOVER -->
+        <ul class="nav nav-pills d-block d-md-flex"> <!-- MENU DE BOTÕES -->
+          <li class="nav-item fw-bold">
+            <a href="#sobre_clinica" class="nav-link"><!-- active PARA ATIVAR O BOTÃO -->
+              <i class="bi bi-house-door me-1"></i><!-- ICONE bootstrap, me-1 UMA MARGEM -->
+              Sobre
+            </a> 
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#saude" class="nav-link">
+              <i class="bi bi-heart-pulse-fill"></i>
+              Saúde
+            </a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#alimentacao" class="nav-link">
+              <i class="bi bi-stack-overflow"></i>
+              Alimentação
+            </a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#contato" class="nav-link">
+              <i class="bi bi-chat-left-text me-1"></i>
+              Contato
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true"><!-- data-bs-smooth-scroll PARA ORGANIZAR O MENU QUANDO CLIC -->
+    <section id="sobre_clinica">
+      <div class="carousel slide" data-bs-ride="carousel" id="carousel"><!-- PARA START carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000"><!-- active P/ATIVAR, data O TEMPO -->
+            <img src="img/slides/1.jpg" alt="Foto de equipamentos medico">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="img/slides/2.jpg" alt="Foto de um medico">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="img/slides/3.jpg" alt="Foto de equipamento medico">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+          <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+        </div>
+      </div>
+      <div class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="img/mario.jpg" class="d-block w-100 rounded-4" alt="Foto do Dr. Mario">
+            </div>
+            <div class="col-md-7 mt-3 mt-md-0"><!-- mt-md-0 PARA ALINHAR COM A FOTO -->
+              <h2 class="section_title">Sobre <span class="text_color" >o Consultório</span></h2>
+              <p class="text_justify">Somos uma clínica de endocrinologia comprometida em fornecer cuidados médicos de alta qualidade e personalizados para nossos pacientes. Nossos profissionais altamente capacitados têm vasta experiência em tratar uma ampla gama de doenças hormonais, incluindo diabetes, distúrbios da tireoide, obesidade, osteoporose, disfunções sexuais, distúrbios menstruais e muitos outros. Acreditamos que uma abordagem multidisciplinar e centrada no paciente é a chave para obter os melhores resultados de saúde. Nossa missão é fornecer a você e sua família o melhor atendimento possível, com empatia, compaixão e respeito.</p>
+              <h3 class="section_title">Sobre <span class="text_color">o Atendimento</span></h3>
+              <p class="text_justify">Nossa clínica de endocrinologia tem como objetivo fornecer um atendimento personalizado e atencioso para nossos pacientes. Nosso compromisso é entender as necessidades de cada paciente e fornecer um plano de tratamento individualizado e abrangente. Nossos profissionais altamente capacitados estão sempre disponíveis para responder a perguntas e fornecer orientação durante todo o processo de tratamento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="saude" class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="section_title text-center">Como cuidar da sua<span class="text_color"> Saúde</span></h2>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <img src="img/eventos/1.jpeg" alt="foto praticando exercicios" class="d-block w-100 mb-2 rounded-4"><!--d-block w.. P/AJUSTA O TAM. -->
+            <h3 class="section_title text_color fs-4">
+              <i class="bi bi-bicycle"></i>
+              Exercícios
+            </h3>
+            <p class="text_justify">Os exercícios físicos regulares podem trazer inúmeros benefícios para a saúde, incluindo a redução do risco de doenças crônicas, a melhoria do bem-estar mental e o aumento da energia e da resistência física. Além disso, a prática de exercícios pode contribuir para a manutenção de um peso saudável e melhorar a qualidade de vida em geral.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="img/eventos/2.jpeg" alt="foto comida saudavel" class="d-block w-100 mb-2 rounded-4"><!--d-block w.. P/AJUSTA O TAM. -->
+            <h3 class="section_title text_color fs-4">
+              <i class="bi bi-hand-thumbs-up-fill"></i>
+              Alimentção
+            </h3>
+            <p class="text_justify">Uma boa alimentação é fundamental para a manutenção da saúde e do bem-estar. Ela pode fornecer os nutrientes necessários para o bom funcionamento do corpo, reduzir o risco de doenças crônicas e contribuir para a manutenção de um peso saudável. Além disso, uma dieta equilibrada pode ajudar a melhorar a energia, a concentração e a disposição ao longo do dia.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="img/eventos/3.jpeg" alt="foto pessoa estressada" class="d-block w-100 mb-2 rounded-4"><!--d-block w.. P/AJUSTA O TAM. -->
+            <h3 class="section_title text_color fs-4">
+              <i class="bi bi-emoji-angry-fill"></i>
+              Estresse
+            </h3>
+            <p class="text_justify">O estresse pode afetar negativamente a saúde mental e física, aumentando o risco de doenças crônicas e reduzindo a qualidade de vida. Gerenciar o estresse através de técnicas como meditação, atividade física e terapia pode ajudar a melhorar a saúde e o bem-estar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="alimentacao" class="p-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="section_title text-center mb-5">Por que uma boa <span class="text_color">Alimentação</span></h2>
+        </div>
+        <div class="row">
+          <aside class="col-md-2">
+            <nav class="nav nav-pills flex-column nav_alimentacao"><!-- flex-c.. PARA FICAR ABAIXO DO OUTRO -->
+              <button type="button" data-bs-toggle="tab" data-bs-target="#obesidade" class="fw-bold text-start nav-link text_color active">Obesidade</button>
+              <button type="button" data-bs-toggle="tab" data-bs-target="#diabetes" class="fw-bold text-start nav-link text_color">Diabetes</button>
+              <button type="button" data-bs-toggle="tab" data-bs-target="#tireoide" class="fw-bold text-start nav-link text_color">Tireoide</button>
+            </nav>
+          </aside>
+          <div class="col-md-10">
+            <div class="tab-content">
+              <div class="tab-pane active" id="obesidade">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img class="d-block w-100 rounded-2" src="img/saude/obesidade/1.jpg" alt="foto medindo a cintura">
+                    <h5 class="text_color fw-bold mt-2">Açucar</h5>
+                    <p class="text_justify">O consumo excessivo de açúcar pode aumentar o risco de doenças crônicas, como diabetes tipo 2, obesidade e doenças cardíacas.</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100 rounded-2" src="img/saude/obesidade/2.jpg" alt="foto barriga gorda">
+                    <h5 class="text_color fw-bold mt-2">Gorduras</h5>
+                    <p class="text_justify">O consumo excessivo de gordura vegetal pode aumentar o risco de doenças cardíacas e obesidade.</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100 rounded-2" src="img/saude/obesidade/4.jpg" alt="foto pessoa comendo">
+                    <h5 class="text_color fw-bold mt-2">Sal</h5>
+                    <p class="text_justify">O consumo excessivo de sal pode aumentar o risco de pressão arterial elevada, doenças cardíacas e acidente vascular cerebral (AVC).</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100 rounded-2" src="img/saude/obesidade/3.jpg" alt="foto mostrando alimentos">
+                    <h5 class="text_color fw-bold mt-2">Carboidratos</h5>
+                    <p class="text_justify">O consumo excessivo de carboidratos refinados pode levar ao aumento de peso e ao risco de doenças crônicas.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="diabetes">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img class="d-block w-100 rounded-2" src="img/saude/diabetes/1.jpg" alt="fotos de equipamentos medicos">
+                    <h5 class="text_color fw-bold mt-2">Tipo 1</h5>
+                    <p class="text_justify">A diabetes tipo 1 pode levar a uma série de complicações de saúde a longo prazo, incluindo doenças cardíacas, danos nos nervos, problemas renais, cegueira e amputações.</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100 rounded-2" src="img/saude/diabetes/2.jpg" alt="fotos de medicamentos">
+                    <h5 class="text_color fw-bold mt-2">Tipo 1</h5>
+                    <p class="text_justify">A diabetes tipo 1 exige um gerenciamento diário constante e rigoroso, incluindo testes regulares de glicose no sangue, injeções de insulina ou o uso de uma bomba de insulina, monitoramento da dieta e atividade física.</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100 rounded-2" src="img/saude/diabetes/3.jpg" alt="foto de medicamentos">
+                    <h5 class="text_color fw-bold mt-2">Tipo 2</h5>
+                    <p class="text_justify">A diabetes tipo 2 também pode levar a uma série de complicações de saúde a longo prazo, incluindo doenças cardíacas, danos nos nervos, problemas renais, cegueira e amputações, assim como na diabetes tipo 1.</p>
+                  </div><div class="col-md-3">
+                    <img class="d-block w-100 rounded-2" src="img/saude/diabetes/4.jpg" alt="foto de exame de glicose">
+                    <h5 class="text_color fw-bold mt-2">Tipo 2</h5>
+                    <p class="text_justify">A diabetes tipo 2 geralmente é associada a um estilo de vida pouco saudável, incluindo uma dieta rica em açúcares e carboidratos refinados, falta de atividade física e obesidade.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tireoide">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img class="d-block w-100 rounded-2" src="img/saude/tireoide/1.png" alt="foto de um desenho do corpo mostrando a tireoide">
+                    <h5 class="text_color fw-bold mt-2">Hipotireoidismo</h5>
+                    <p class="text_justify">Nesta condição, a tireoide não produz hormônios tireoidianos suficientes, o que pode levar a sintomas como fadiga, ganho de peso, sensibilidade ao frio, pele seca e cabelo frágil.</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100 rounded-2" src="img/saude/tireoide/2.jpg" alt="foto de um exame de tireoide">
+                    <h5 class="text_color fw-bold mt-2">Hipertireoidismo</h5>
+                    <p class="text_justify">Nesta condição, a tireoide produz hormônios tireoidianos em excesso, o que pode levar a sintomas como perda de peso, aumento da frequência cardíaca, tremores, irritabilidade e sudorese.</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100 rounded-2" src="img/saude/tireoide/3.jpg" alt="figura sobre cancer de tireoide">
+                    <h5 class="text_color fw-bold mt-2">Nódulos da tireoide</h5>
+                    <p class="text_justify">Estes são caroços na tireoide, que podem ser benignos ou cancerosos. Em alguns casos, eles podem causar sintomas como dificuldade para engolir ou rouquidão.</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100 rounded-2" src="img/saude/tireoide/4.jpg" alt="foto exame de tireoide">
+                    <h5 class="text_color fw-bold mt-2">Bócio</h5>
+                    <p class="text_justify">Esta é uma condição em que a tireoide aumenta de tamanho e forma um inchaço no pescoço. O bócio pode ser causado por hipotireoidismo, hipertireoidismo ou deficiência de iodo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contato" class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="section_title text-center">Fale <span class="text_color">conosco</span></h2>
+        </div>
+        <div class="row">
+          <div class="col-md-7 mb-5">
+            <form>
+              <div class="mb-3">
+                <label for="nome" class="form-label fw-bold text_color">Seu nome</label>
+                <input type="text" id="nome" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-bold text_color">Seu E-mail</label>
+                <input type="email" id="email" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="telefone" class="form-label fw-bold text_color">Seu telefone (opcional)</label>
+                <input type="tel" id="telefone" name="telefone" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="mensagem" class="form-label fw-bold text_color">Seu mensagem</label>
+                <textarea id="mensagem" class="form-control" required></textarea>
+              </div>
+              <button type="submit" class="btn fw-bold">Enviar</button>
+            </form>
+          </div>
+          <div class="col-md-5">
+            <div class="row">
+              <h3 class="section_title fs-4 text_color">
+                <i class="bi bi-hand-thumbs-up-fill"></i>
+                Redes sociais
+              </h3>
+              <ul class="social_links">
+                <li class="fs-5">
+                  <a href="https://www.facebook.com/drmarioendocrino" target="_blank">
+                    <i class="bi bi-facebook text_color"></i>
+                  </a>
+                </li>
+                <li class="fs-5 ms-3 me-3">
+                  <a href="https://www.instagram.com/drmarioendocrino/" target="_blank">
+                    <i class="bi bi-instagram text_color"></i>
+                  </a>
+                </li>
+                <li class="fs-5">
+                  <a href="https://api.whatsapp.com/send/?phone=558391140191&text=Ol%C3%A1+vim+atrav%C3%A9s+do+seu+site%2C+gostaria+de+agendar+uma+consulta.&type=phone_number&app_absent=0" target="_blank">
+                    <i class="bi bi-whatsapp text_color"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="row mt-4">
+              <h3 class="section_title fs-4 text_color">
+                <i class="bi bi-cursor-fill"></i>
+                Endereço
+              </h3>
+              <p>AV. Rio Grande do Sul n° 1345, Evolution Busness Center, 10° Andar, sala 1007, Bairro dos Estados - João Pessoa - PB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/messages_pt_BR.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+<footer>
+  <p>&copy; 2023 Dr Mário Coutinho. Todos os direitos reservados.</p>
+</footer>
+</html>
